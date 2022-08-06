@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Style chung cho thẻ input */
+.input-wrapper input {
+    border: 1px solid #dbdbdb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+}
+
+
+.btn {
+    color: #F2CD5C;
+    background: #111;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 10px auto;
+    padding: 10px 50px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {background-color: #fff;
+    color: #F2CD5C;}
+
+.cursor {
+    cursor: pointer;
+}
+
+.header {
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.error {
+    color: red;
+}

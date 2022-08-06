@@ -1,0 +1,622 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1cm;
+
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #fff;
+
+}
+
+.toggle {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.toggle.active {
+    background: url(https://i.ibb.co/rt3HybH/close.png);
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: center;
+    cursor: pointer;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 2;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(49, 48, 48);
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+}
+
+.text h2 {
+    font-size: 5em;
+    font-weight: 800;
+    color: #F2CD5C;
+    line-height: 1em;
+
+}
+
+.text h3 {
+    font-size: 4em;
+    font-weight: 700;
+    color: #F2CD5C;
+    line-height: 1em;
+}
+
+.text p {
+    font-size: 1.1em;
+    color: #fff;
+    margin: 20px 0;
+    font-weight: 400;
+    max-width: 700px;
+}
+
+.text .button {
+    display: inline-block;
+    background: #F2CD5C;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    border: solid #F2CD5C;
+    border-radius: 30px;
+    transition: 0.4s;
+
+}
+
+.text .button:hover {
+    background-color: transparent;
+    color: #F2CD5C;
+}
+
+.social {
+    position: absolute;
+    z-index: 10;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social li a i {
+    font-size: 45px;
+    color: #F2CD5C;
+    ;
+}
+
+.social li {
+    list-style: none;
+}
+
+.social li a {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(0.5);
+    transition: 0.2s;
+}
+
+.social li a:hover {
+    transform: scale(0.5) translateY(-15px);
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.collumn {
+    padding-left: 200px;
+    z-index: 11;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+
+.card h3 {
+    color: #F2CD5C;
+    z-index: 12;
+}
+
+.card p {
+    color: #fff;
+    z-index: 12;
+}
+
+#card1 {
+    background-image: url(../Images/hn1.jpg);
+}
+
+#card2 {
+    background-image: url(../Images/hn2.jpg);
+}
+
+#card3 {
+    background-image: url(../Images/hn3.jpg);
+}
+
+#card4 {
+    background-image: url(../Images/hn4.webp);
+}
+
+#card5 {
+    background-image: url(../Images/hn5.jpg);
+}
+
+#card6 {
+    background-image: url(../Images/hn.jpg);
+}
+
+#card7 {
+    background-image: url(../Images/hn7.jpg);
+}
+
+
+#card8 {
+    background-image: url(../Images/dn1.jpeg);
+}
+
+#card9 {
+    background-image: url(../Images/dn2.jpg);
+}
+
+#card10 {
+    background-image: url(../Images/dn3.jpg);
+}
+
+#card11 {
+    background-image: url(../Images/dn4.jpg);
+}
+
+#card12 {
+    background-image: url(../Images/hcm1.jpg);
+}
+
+#card13 {
+    background-image: url(../Images/hcm2.jpg);
+}
+
+#card14 {
+    background-image: url(../Images/hcm3.jpg);
+}
+
+#card15 {
+    background-image: url(../Images/hcm4.jpg);
+}
+
+#card16 {
+    background-image: url(../Images/hcm5.jpg);
+}
+
+#card17 {
+    background-image: url(../Images/sapa.jpg);
+}
+
+
+#card18 {
+    background-image: url(../Images/hue.jpg);
+}
+
+#card19 {
+    background-image: url(../Images/dl.jpg);
+}
+
+#card20 {
+    background-image: url(../Images/ha.jpg);
+}
+
+#card21 {
+    background-image: url(../Images/pq.jpg);
+}
+
+#card22 {
+    background-image: url(../Images/nt.jpg);
+}
+
+#card23 {
+    background-image: url(../Images/ct.jpg);
+}
+
+#card24 {
+    background-image: url(../Images/hl.jpg);
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.menu {
+    background-color: #F2CD5C;
+}
+
+.menu ul {
+    position: relative;
+
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+.menu ul li i {
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #111;
+    line-height: 1.5cm;
+}
+
+.menu ul li a:hover {
+    color: #022873;
+    text-decoration: underline;
+}
+
+header {
+    padding-bottom: 770px;
+}
+
+.bar {
+    background-color: #F2CD5C;
+    width: 120px;
+    height: 2px;
+    align-items: center;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+
+main .block {
+
+    width: 100%;
+    padding: 40px 140px;
+    text-align: center;
+}
+
+main .block h1 {
+    margin-bottom: 10px;
+    color: #F2CD5C;
+}
+
+.card-n .popup-view {
+    z-index: 2;
+    background: rgba(60, 60, 60, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+main .block {
+
+    width: 100%;
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 200px;
+}
+
+main .block h1 {
+    margin-bottom: 10px;
+    color: #F2CD5C;
+}
+
+main .block h2 {
+    margin-top: 20px;
+    color: #F2CD5C;
+    text-align: left;
+}
+
+main .block video {
+    width: 800px;
+    margin-top: 15px;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 70px;
+}
+
+.deck {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#deck1 {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#deck2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+}
+
+.row {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px 20px;
+}
+
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+    position: relative;
+}
+
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card p {
+    color: #fff;
+    z-index: 12;
+    background-color: #111;
+    width: 100px;
+}
+
+#centralvn {
+    background-color: #F2CD5C;
+}
+
+footer {
+    background-color: #fff;
+    color: #111;
+    display: flex;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #111;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div {
+    padding: 50px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
+
+.card-n .popup-view {
+    z-index: 2;
+    background: rgba(60, 60, 60, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card-n .popup-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-n .popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.card-n .popup-card .product-img {
+    z-index: 2;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-n .popup-card .product-img img {
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    left: -50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-n .popup-card .info {
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-n .popup-card .close-btn {
+    color: #111;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card-n .popup-card .info h2 {
+    font-size: 40px;
+    line-height: 20px;
+    margin: 10px;
+}
+
+.product .popup-card .info h2 span {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.card-n .popup-card .info p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+
+
+/*Responsive styles*/
+
+@media (max-width: 900px) {
+    .card-n .popup-card {
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+
+    .card-n .popup-card .product-img {
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-n .popup-card .product-img img {
+        max-width: 100%;
+
+    }
+
+    .card-n .popup-card .info {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .card-n .popup-card .info h2 {
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+
+    .card-n .popup-card .info h2 span {
+        font-size: 10px;
+    }
+
+    .card-n .popup-card .info p {
+        margin: 5px;
+        font-size: 13px;
+    }
+}
